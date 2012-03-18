@@ -1,5 +1,10 @@
 # Cloudy Silverstripe Theme
 
+
+
+![image](http://cloudy.title.dk/preview.png)
+
+
 This theme has been handcrafted by [Anselm Christophersen](http://www.anselm.dk) during January/February 2012 for the Silverstripe Theme Contest.
 
 The theme was a finalist, and was ranked overall second in terms of code quality. You can read more about that on the [Silverstripe Blog](http://www.silverstripe.org/and-the-winner-of-the-theme-contest-is../).
