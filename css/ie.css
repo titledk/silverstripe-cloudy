@@ -1,0 +1,13 @@
+/**
+ * Cloudy IE7-9 Specific stylesheet
+*/
+.preie9 .span9 {
+  max-width: 680px;
+}
+
+.ie7 footer .content p, .ie7 footer .content div {
+  display: inline;
+}
+.ie7 #TopNavigation, .ie7 #SearchForm_SearchForm {
+  display: none;
+}

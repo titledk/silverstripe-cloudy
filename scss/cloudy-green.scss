@@ -1,0 +1,55 @@
+/** 
+ * SilverStripe Cloudy Theme
+ * Developed by Anselm Christophersen
+ * http://www.anselm.dk;
+ * This theme is based on Twitter Bootstrap
+ *
+ * Green Color Scheme
+ */
+
+//:::::::::::::::::: DEVELOPER NOTES :::::::::::::::::://
+//In order to create your own color scheme:
+//1. copy this file and rename it as something like "cloudy-myscheme.scss"
+//2. create a new color scheme in the "variables" directory
+
+
+
+//:::::::::::::::::: _VARIABLES.SCSS :::::::::::::::::://
+ @import "variables/green";
+
+
+
+//:::::::::::::::::: _CLOUDY.SCSS :::::::::::::::::://
+@import "cloudy";
+
+
+//:::::::::::::::::: CUSTOMIZATION :::::::::::::::::://
+
+//Main menu hover states
+.navbar .nav .current > a, 
+.navbar .nav .current > a:hover, 
+.navbar .nav .section > a, 
+.navbar .nav .section > a:hover {
+  background-color: #7F9E2C;
+}
+
+//Icon color
+header #Logo a h1 .icon {
+	color: #CFCFCF;
+	@include single-text-shadow(1px, 1px, 4px, #555); 
+}
+
+
+//Background
+html.msie {
+	background:#BDBDBD; //In IE we need a background color to render the noise on top. This breaks things in FF and Webkit though
+	@include filter-gradient(#BDBDBD, #fff, vertical); // IE6-9
+}
+html {
+	@include background-image(linear-gradient(#999 0px, #eee 99px, #fff 123px, #fff 90%, #eee));
+}
+//Noise ontop of gradient
+body {
+	background:inline-image("inline/noise.png");
+}
+

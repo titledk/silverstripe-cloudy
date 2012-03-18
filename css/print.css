@@ -1,0 +1,28 @@
+/**
+ * Cloudy Print Stylesheet
+*/
+#Layout .page-header {
+  padding: 0 0 10px !important;
+  margin: 0px;
+}
+
+html, body {
+  background: none!important;
+}
+
+header, #Navigation, .span3 {
+  display: none!important;
+}
+
+.span9 {
+  max-width: none!important;
+  width: auto!important;
+}
+
+footer .content div {
+  color: green;
+}
+
+footer .icon {
+  display: none;
+}

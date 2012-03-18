@@ -1,0 +1,119 @@
+/** 
+ * Cloudy Responsive
+ * Cloudy-specific adjustments to Twitter Bootstrap's responsive styles
+ */
+
+
+// UP TO LANDSCAPE PHONE
+// ---------------------
+
+@media (max-width: 480px) {
+  .container {
+  	padding:0 12px;
+  }
+
+  #SocialButtons {
+    margin-top: 0px!important;
+  }
+  //giving a little more space on mobile devices, as the tag line will often have muliple lines here
+  header {
+  	margin-bottom:20px;
+  }
+
+  #Layout .span9,
+  #Sidebar {
+		padding-left:6px;
+    padding-right:6px;
+  }
+
+	#Layout .page-header {
+		padding-right:40px;
+		padding-top:10px;
+	}
+
+	.typography {
+		img.right {
+			float:none;
+			margin-left:0px;
+			//max-width:70%!important;
+		}
+	}
+
+}
+
+
+
+@media (max-width: 640px) {
+	#TopNavigation {
+		display: none;
+	}
+
+	.typography {
+		img.right {
+			max-width:200px;
+		}
+	}
+
+	#SearchForm_SearchForm {
+		display: none;
+	}
+}
+
+
+// LANDSCAPE PHONE TO SMALL DESKTOP & PORTRAIT TABLET
+// --------------------------------------------------
+
+
+@media (max-width: 768px) {
+  body {
+  	//background:green!important;
+  }
+  #Layout .span9 {
+		padding-left:12px;
+    padding-right:12px;
+  }
+	#Sidebar {
+		padding-right:12px;
+		blockquote {
+			display: none;
+		}
+	}  
+}
+
+
+
+// PORTRAIT TABLET TO DEFAULT DESKTOP
+// ----------------------------------
+
+@media (min-width: 768px) and (max-width: 980px) {
+  #Layout .span9 {
+    max-width:516px;
+  }	
+}
+
+
+// TABLETS AND BELOW
+// -----------------
+@media (max-width: 980px) {
+	#Layout .page-header {
+		padding-top:10px;
+	}
+}
+
+
+// DEFAULT DESKTOP
+// ---------------
+@media (min-width: 980px) {
+  .span9 {
+    max-width:680px;
+  }
+}
+
+
+// LARGE DESKTOP & UP
+// ------------------
+@media (min-width: 1200px) {
+	#Layout .span9 {
+    max-width: 850px;
+	}
+}

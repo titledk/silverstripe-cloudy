@@ -1,0 +1,25 @@
+/**
+ * Cloudy IE7-9 Specific stylesheet
+*/
+
+.preie9 {
+	//IE7&8 don't seem to be supporting responsive layout, so they stay with the standard
+	.span9 {
+    max-width:680px;
+  }
+}
+
+.ie7 {
+	footer {
+		.content {
+			p, div {
+				display:inline;
+			}
+		}
+	}
+	//Top navigation and search form are not behaving well in IE7
+	//We'll just hide them for now
+	#TopNavigation, #SearchForm_SearchForm {
+		display:none;
+	}
+}

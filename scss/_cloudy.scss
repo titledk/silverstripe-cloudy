@@ -1,0 +1,46 @@
+//Cloudy Silerstripe Theme
+//This is a collection of all includes nececcary for the Cloudy Theme
+//This needs to be loaded by a Cloudy color scheme, as "Cloudy-base" or "Cloudy-green"
+
+
+//:::::::::::::::::: LEGACY IE SUPPORT :::::::::::::::::://
+//$experimental-support-for-svg: true; //this has been turned off as it bloats the stylesheets and doesn't work very well
+//use IE filters from http://www.colorzilla.com/gradient-editor/ instead!
+
+//NOTE: In order to provide rounded corners in IE9 on the navigation bar, the microsoft filter
+//has been uncommented in the "gradient-vertical" mixin in bootstrap/scss/_mixins.scss
+
+
+
+//:::::::::::::::::: IMPORTS :::::::::::::::::://
+@import "cloudy-bootstrap";
+@import "bootstrap-responsive";
+
+@import "compass/css3";
+@import "compass/utilities";
+@import "compass/typography";
+
+@import "fonts";
+@import "form";
+/** 
+ * Type
+ * Bootstrap's type styling
+ * NOTE: These are not wrapped within a .typography class, 
+ * and thus apply to the entire page.
+ */
+//a special version of this file for the editor exists in typography/cloudy-type
+@import "type"; 
+@import "typography/typography"; //Silverstripe specific typography
+@import "layout";
+@import "modules";
+@import "ie";
+@import "cloudy-responsive";
+
+
+//:::::::::::::::::: MODULE SPECIFIC STYLES :::::::::::::::::://
+//Uncomment the ones you don't need for a lighter css file
+@import "modules/gallery";
+@import "modules/blog";
+@import "modules/forum";
+
+

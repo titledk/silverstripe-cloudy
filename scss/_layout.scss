@@ -1,0 +1,223 @@
+/** 
+ * Cloudy Layout
+ */
+
+//The gradient is rendered differnt in IE, both when using svgs (IE9), and filters (pre IE9). We'll have to live with that.
+html.msie {
+	background:#555; //In IE we need a background color to render the noise on top. This breaks things in FF and Webkit though
+	@include filter-gradient(#555, #fff, vertical); // IE6-9
+}
+html {
+	@include background-image(linear-gradient(#333 0px, #555 14px, #cecece 78px, #fff 134px, #fff 90%, #eee));
+	height:100%;
+	background-attachment: fixed;
+
+}
+body {
+	background:none;
+}
+
+
+/* HEADER
+----------------------------------------- */
+header {
+	@include clearfix;
+	position:relative;
+	overflow:visible;
+	min-height:60px;
+	margin-top:13px;
+	margin-bottom:10px;
+	#Logo {
+		margin-left:10px;
+		position:relative;
+		top:3px;
+		a {
+			text-decoration:none;
+			h1 {
+				@include font-on-dark-bg;
+				font-size:33px;
+				font-weight:700;
+				margin:0px;
+				.icon {
+					font-family: 'WebSymbolsRegular';
+					font-size: 22px;
+					line-height: 23px; //This is important for the IE text shadow script
+					padding-left: 6px;
+					position: absolute;
+					top: 3px;
+				}
+			}
+			p {
+				@include font-on-dark-bg;
+				@include single-text-shadow(1px, 1px, 2px, #222); 
+				font-size:14px;
+				line-height:15px;
+				margin:0px;
+				//margin-top:-2px;
+			}            
+		}
+	}
+}
+#TopNavigation {
+	position:absolute;
+	top:1px;
+	right:5px;
+	a {
+		&:hover {
+			text-decoration:none;
+		}
+		span {
+			text-decoration: underline;
+		}
+	}
+	span {
+		@include font-on-dark-bg;
+		@include single-text-shadow(1px, 1px, 1px, #444); 
+		font-size:11px;
+		line-height:12px;	//This is important for the IE text shadow script
+		&.icon {
+			font-family: 'WebSymbolsRegular';
+			text-decoration:none;
+			.ui-text-shadow-copy {
+				//icon shadows should have no underline
+				text-decoration:none;	
+			}
+		}
+		&.ui-text-shadow,  
+		//&.ui-text-shadow-copy, //this is the shadow - it should have underlines
+		&.ui-text-shadow-original {
+			//IE text shadows
+			text-decoration:none;
+		}
+	}
+}
+#SearchForm_SearchForm {
+	position:absolute;
+	top:27px;
+	right:2px;
+	fieldset {
+		margin:0px;
+		padding:0px;
+		.middleColumn {
+			margin:0px;
+		}
+	}
+	#Search {
+		float:left;
+		input {
+			width:200px;
+			height:18px;
+			//color, hoff, voff, blur, spread, inset
+			@include single-box-shadow(#444, 1px, 1px, 1.5px, false, true);
+			border:0px;
+			padding-left:10px;
+			font-size:10px;
+			@include border-radius(3px 0px 0px 3px);
+		}
+	}
+	input.action {
+		float:right;
+		height:26px;
+		min-width:30px;
+		margin-bottom:0px;
+
+	  @include gradient-vertical(#555, $navbarBackground);
+	  $shadow: 0 1px 3px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.1);
+	  @include box-shadow($shadow);
+
+		border:0px;
+		//@include single-text-shadow(1px, 1px, 1px, #333);
+		font-weight:normal;
+		color:#fff;
+		font-size:10px;
+		@include border-radius(0px 4px 4px 0px);
+	}
+}
+
+
+/* NAVIGATION
+----------------------------------------- */
+#Navigation {
+	@include border-radius(4px);
+	.navbar {
+		@include border-radius(4px);
+		.container {
+			@include border-radius(4px);
+		}
+	}
+	.navbar {
+		@include clearfix;
+		overflow:visible;
+		position:relative;
+		z-index:2;
+		margin-bottom:0px;
+		.navbar-inner {
+			padding-left:14px;
+			padding-right:14px;
+		}
+		.nav.pull-right {
+			margin-right:25px;
+		}
+		.btn, 
+		.btn-group {
+			margin-top: 3px;
+			position: absolute;
+			right: 9px;
+			z-index: 5;  
+		}
+	}  
+}
+
+
+/* LAYOUT
+----------------------------------------- */
+#Layout {
+	background:#fff;
+	@include border-radius(3px 3px 0px 0px);
+	margin-top:-3px; //the navigation overlaps layout by 3px
+	padding-bottom:22px;
+	border-bottom: 1px solid #e5e5e5;
+	.page-header {
+		margin-top:0px;
+		padding-top:18px;
+		padding-left:15px;
+	}
+	#Sidebar {
+		padding-left:12px;
+		#SocialButtons {
+			margin-top: 30px;
+			padding-left: 10px;
+			div {
+				height:30px;
+			}
+		}
+	}
+}
+
+
+/* FOOTER
+----------------------------------------- */
+footer {
+	padding-top:5px;
+	margin-bottom:20px;
+	@include clearfix;
+	.content {
+		//@include font-on-dark-bg;
+		//padding-left: 9px;
+		p, div {
+			display: inline-block;
+			color:#777;
+			font-size: 11px;
+			.icon {
+				font-family: 'WebSymbolsRegular';
+			}
+		}
+		&.left {
+			float:left;
+		}
+		&.right {
+			float:right;
+		}
+	}
+}
+

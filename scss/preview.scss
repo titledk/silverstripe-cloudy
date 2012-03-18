@@ -1,0 +1,98 @@
+/**
+ * Cloudy Preview
+ * These are additional CSS styles for the Cloudy preview
+*/
+@import "compass/css3";
+@import "variables/base";
+@import "hero-unit";
+
+
+
+.hero-unit {
+  margin-top:20px;
+  padding: 16px 20px;
+  h1 {
+  	font-size:26px;
+  	margin-bottom:7px;
+  }
+  p {
+  	font-size:13px;
+  	line-height:17px;
+  	margin-bottom:12px
+  }
+}
+
+
+#Preview {
+	.tabbable {
+		margin-top:24px;
+	}
+	ul.nav-tabs {
+		margin-bottom:0px;
+	}
+	.tab-content {
+		padding:12px;
+		background:#fff;
+		border-left:1px solid #DDDDDD;
+		border-right:1px solid #DDDDDD;
+		border-bottom:1px solid #DDDDDD;
+		p {
+			font-size:13px;
+			font-weight:normal;
+			line-height:18px;
+		}
+		code {
+			padding:1px 4px;
+		}
+		pre code {
+			border:none;
+		}
+	}
+	.alert {
+		p {
+			font-size:13px;
+			font-weight:normal;
+			line-height:18px;
+		}
+	}
+
+	#preview-readme {
+		padding:10px;
+		h2 {
+			margin-top:20px;
+		}
+	}
+
+}
+
+
+
+@media (max-width: 480px) {
+
+	.hero-unit {
+	  margin-top:10px;
+	  //riding over the border
+	  margin-left:-18px;
+	  margin-right:-18px;
+	  padding: 7px;
+	  h1 {
+	  	font-size:26px;
+	  	margin-bottom:7px;
+	  }
+	  p {
+	  	font-size:13px;
+	  	line-height:17px;
+	  	margin-bottom:12px
+	  }
+	}
+
+	
+	#Preview {
+		.tab-content {
+			.btn {
+				margin-bottom:6px;
+			}
+		}
+	}
+
+}

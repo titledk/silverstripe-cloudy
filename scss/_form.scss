@@ -1,0 +1,20 @@
+
+/** 
+ * Cloudy Form
+ * Silverstripe specific form styling
+ */
+
+ #MemberLoginForm_LoginForm {
+ 	label.right {
+ 		text-align:left;
+ 	}
+ }
+
+ .message {
+ 	padding: 8px 14px;
+  margin-bottom: $baseLineHeight;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  background-color: $warningBackground;
+  border: 1px solid $warningBorder;
+  @include border-radius(4px);
+ }

@@ -1,0 +1,8 @@
+/**
+ * Cloudy Module Classes
+ * Bases on the SMACSS idea of css modules
+ */
+
+ .clearfix {
+ 	@include clearfix;
+ }

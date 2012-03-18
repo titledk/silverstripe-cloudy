@@ -1,0 +1,32 @@
+
+/** 
+ * Gallery Module Cloudy Theme Styling
+ * https://github.com/webair/thinc.silverstripe.gallery
+ * 
+ */
+
+.GalleryPage {
+	.typography {
+		img {
+	    margin-bottom: 10px;
+	    margin-right: 12px;
+		}
+		ul#Gallery {
+			@include clearfix;
+			margin:0px;
+		}
+	}
+}
+
+
+@media (max-width: 480px) {
+	.GalleryPage {
+		.typography {
+			img {
+				width:122px;
+		    margin-bottom: 2px;
+		    margin-right: 3px;
+			}
+		}
+	}
+}

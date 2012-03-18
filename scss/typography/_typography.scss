@@ -1,0 +1,65 @@
+
+/** 
+ * Cloudy Typography
+ * Typography adjustments beyond Bootstrap's typography file
+ * These only apply to content areas with the .typography class
+ */
+
+
+.typography {
+
+	h2 {
+		margin-top:-7px; //for theme presentation
+		line-height:28px;
+		margin-bottom:10px;
+	}
+
+
+	img {
+		border: none;
+		margin: 0 0 16px 0;
+		&.nomargin {
+			margin:0px;
+		} 
+		&.right {
+			//float: right; //for pulling an image right, it should be placed inside of a .pull-right div, and have the .right class - that allows for easily adding an .imgtitle
+			margin-left: 20px;
+		}
+		&.left {
+			float: left;
+			margin-right:10px;
+		}
+		&.leftAlone {
+			float: left;
+			margin-right: 100%;
+		}
+		&.center {
+			float: none;
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+		}
+	}
+	.imgtitle {
+		//margin-top:-10px; //this doesn't work, we use position:relative instead
+		position:relative;
+		top:-10px;
+		margin-bottom:16px;
+		&.right {
+			//float: right; //taken out as it gives problems in IE9
+			margin-left: 20px;
+		}		
+	}
+
+
+	//WYSIWYG editor alignment classes
+	.left {
+		text-align: left;
+	}
+	.center {
+		text-align: center;
+	}
+	.right {
+		text-align: right;
+	}
+}

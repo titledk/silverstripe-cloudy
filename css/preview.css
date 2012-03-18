@@ -1,0 +1,98 @@
+/**
+ * Cloudy Preview
+ * These are additional CSS styles for the Cloudy preview
+*/
+.hero-unit {
+  padding: 60px;
+  margin-bottom: 30px;
+  background-color: #f5f5f5;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -o-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  border-radius: 6px;
+}
+.hero-unit h1 {
+  margin-bottom: 0;
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+.hero-unit p {
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 27px;
+}
+
+.hero-unit {
+  margin-top: 20px;
+  padding: 16px 20px;
+}
+.hero-unit h1 {
+  font-size: 26px;
+  margin-bottom: 7px;
+}
+.hero-unit p {
+  font-size: 13px;
+  line-height: 17px;
+  margin-bottom: 12px;
+}
+
+#Preview .tabbable {
+  margin-top: 24px;
+}
+#Preview ul.nav-tabs {
+  margin-bottom: 0px;
+}
+#Preview .tab-content {
+  padding: 12px;
+  background: #fff;
+  border-left: 1px solid #DDDDDD;
+  border-right: 1px solid #DDDDDD;
+  border-bottom: 1px solid #DDDDDD;
+}
+#Preview .tab-content p {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+}
+#Preview .tab-content code {
+  padding: 1px 4px;
+}
+#Preview .tab-content pre code {
+  border: none;
+}
+#Preview .alert p {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+}
+#Preview #preview-readme {
+  padding: 10px;
+}
+#Preview #preview-readme h2 {
+  margin-top: 20px;
+}
+
+@media (max-width: 480px) {
+  .hero-unit {
+    margin-top: 10px;
+    margin-left: -18px;
+    margin-right: -18px;
+    padding: 7px;
+  }
+  .hero-unit h1 {
+    font-size: 26px;
+    margin-bottom: 7px;
+  }
+  .hero-unit p {
+    font-size: 13px;
+    line-height: 17px;
+    margin-bottom: 12px;
+  }
+
+  #Preview .tab-content .btn {
+    margin-bottom: 6px;
+  }
+}
