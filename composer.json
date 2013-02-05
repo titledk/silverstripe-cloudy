@@ -1,0 +1,22 @@
+{
+  "name": "titledk/cloudy",
+  "type": "silverstripe-theme",
+	"description": "A Silverstripe theme based on Twitter Bootstrap",
+	"keywords": ["silverstripe", "theme", "bootstrap"],
+	"license": "Apache License",
+	"authors": [
+		{
+			"name": "Anselm Christophersen",
+			"homepage": "http://anselm.dk"
+		}
+	],
+	"require": 
+	{
+		"php": ">=5.3.2",
+		"silverstripe/framework": "3.*",
+		"silverstripe/cms": "3.*"
+	},
+	"support": {
+		"issues": "https://github.com/titledk/silverstripe-cloudy/issues"
+	}
+}
