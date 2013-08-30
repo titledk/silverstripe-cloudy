@@ -1,0 +1,16 @@
+.ProductCategory .productItem {
+  height: 240px;
+  margin-bottom: 15px;
+}
+.ProductCategory .productItem .title {
+  line-height: 1.2em;
+  display: block;
+  height: 45px;
+  overflow: hidden;
+}
+.ProductCategory .productItem .price {
+  margin-bottom: 7px;
+}
+.ProductCategory .filterbar {
+  margin-bottom: 1em;
+}
