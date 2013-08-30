@@ -5,23 +5,23 @@
 		<div class="content well" style="padding: 8px 0;">
 			<ul class="nav nav-list">
 			
-			<% control Level(1) %>
+			<% loop Level(1) %>
 				<li class="$LinkingMode">
 					<a href="$Link">
 						<i class="icon-home <% if LinkingMode == "current" %>icon-white<% end_if %>"></i>
 						$MenuTitle.XML
 					</a>
 				</li>
-			<% end_control %>			
+			<% end_loop %>			
 
-			<% control Menu(2) %>	  
+			<% loop Menu(2) %>	  
 				<li class="$LinkingMode">
 					<a href="$Link">
 						<i class="icon-file <% if LinkingMode == "current" %>icon-white<% end_if %>"></i>
 						$MenuTitle.XML
 					</a>
 				</li>
-			<% end_control %>
+			<% end_loop %>
 			</ul>
 		</div>
 	<% end_if %>

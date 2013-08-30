@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<% base_tag %>
-		<title><% control SiteConfig %>$Title.RAW<% end_control %> - <% if MetaTitle %>$MetaTitle<% else %>$Title<% end_if %></title>
+		<title><% with SiteConfig %>$Title.RAW<% end_with %> - <% if MetaTitle %>$MetaTitle<% else %>$Title<% end_if %></title>
 		$MetaTags(false)
 		
 		<%-- some iOS & mobile device tweaks --%>

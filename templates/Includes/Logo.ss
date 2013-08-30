@@ -1,7 +1,7 @@
 
-<a href="<% control Page(home) %>$Link<% end_control %>">
-	<% control SiteConfig %>
+<a href="<% with Page(home) %>$Link<% end_with %>">
+	<% with SiteConfig %>
 		<h1>$Title.RAW <span class="icon">C</span></h1>
 		<p>$Tagline</p>
-	<% end_control %>
+	<% end_with %>
 </a>

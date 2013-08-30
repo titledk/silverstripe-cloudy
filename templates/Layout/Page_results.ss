@@ -8,7 +8,7 @@
 	</div>
 	<div class="span9 typography">
 		<% if Results %>
-				<% control Results %>
+				<% loop Results %>
 					<div class="item">
 						<h2><% if MenuTitle %>$MenuTitle<% else %>$Title<% end_if %></h2>
 						<% if Content %>
@@ -17,7 +17,7 @@
 						<a class="readMoreLink" href="$Link" title="Read more">Read more</a>
 					</div>
 					<br />
-				<% end_control %>
+				<% end_loop %>
 		<% else %>
 			<p>
 				<%-- Example of a translatable string (see http://doc.silverstripe.org/i18n) --%>
@@ -34,13 +34,13 @@
 					<a class="prev" href="$Results.PrevLink" title="View the previous page">Prev</a>
 				<% end_if %>
 				<span>
-					<% control Results.SummaryPagination(5) %>
+					<% loop Results.SummaryPagination(5) %>
 						<% if CurrentBool %>
 							$PageNum
 						<% else %>
 							<a href="$Link" title="View page number $PageNum">$PageNum</a>
 						<% end_if %>
-					<% end_control %>
+					<% end_loop %>
 				</span>
 			</div>
 		<% end_if %>

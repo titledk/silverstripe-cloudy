@@ -1,6 +1,6 @@
 
 <div class="content typography left">
-	<p><% _t('COPYRIGHT', 'Copyright') %> &copy; $Now.Year | <% control SiteConfig %>$Title.RAW: $Tagline.RAW<% end_control %> | 
+	<p><% _t('COPYRIGHT', 'Copyright') %> &copy; $Now.Year | <% with SiteConfig %>$Title.RAW: $Tagline.RAW<% end_with %> | 
 	<% _t('POWEREDBY', 'Powered by') %> <a href="http://silverstripe.org" target="_blank">SilverStripe</a>. <br />
 	</p>
 </div>

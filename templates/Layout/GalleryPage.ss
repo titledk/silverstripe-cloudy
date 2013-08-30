@@ -10,13 +10,13 @@
  
 			<% if GalleryImages %>
 			<ul id="Gallery">
-			    <% control GalleryImages %>
+			    <% loop GalleryImages %>
 			        <li>
 			            <a href="$OriginalURL" title="$Title">
 			                <img src="$URL" alt="" />
 			            </a>
 			        </li>       
-			    <% end_control %>
+			    <% end_loop %>
 			</ul>
 			<% end_if %>
 

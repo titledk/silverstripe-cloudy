@@ -9,9 +9,9 @@
 			</a>
 			<div class="nav-collapse">
 				<ul class="nav">
-					<% control Menu(1) %>	  
+					<% loop Menu(1) %>	  
 						<li class="$LinkingMode $FirstLast"><a href="$Link" title="$Title.XML">$MenuTitle.XML</a></li>
-					<% end_control %>
+					<% end_loop %>
 				</ul>
 				<% if Translations %>
 					<ul class="nav pull-right">
@@ -23,12 +23,12 @@
 										<b class="caret"></b>
 							</a>
 							<ul class="dropdown-menu">
-								<% control Translations %>
+								<% loop Translations %>
 									<li class="$Locale.RFC1766"><a href="$Link">$Locale.Nice</a></li>
-								<% end_control %>								    
+								<% end_loop %>
 							</ul>
 						</li>
-					</ul>							
+					</ul>
 				<% end_if %>
 			</div><!--/.nav-collapse -->
 		</div>
