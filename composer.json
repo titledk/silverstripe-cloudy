@@ -18,5 +18,11 @@
 	},
 	"support": {
 		"issues": "https://github.com/titledk/silverstripe-cloudy/issues"
-	}
+	},
+	"extra": {
+		"screenshots": [
+			"http://cloudy.title.dk/preview.png"
+		]
+		
+	}	
 }
